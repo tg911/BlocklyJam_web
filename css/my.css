@@ -1,0 +1,49 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#workspace {
+  height: 75%;
+  width: 95%;
+}
+
+#blocklyArea {
+  height: 130%;
+  background: #fff;
+  text-align: center;
+}
+
+#outputArea {
+  font-size: 18px;
+}
+
+#status {
+  color: #e73700;
+}
+
+.option {
+  margin: 10px 0px;
+}
+
+#sideCodeBtn {
+  /* top: 10px; */
+  right: 5px;
+}
+
+.navBtn {
+  top: 5px;
+}
+
+.blank {
+  height: 40px;
+  width: 100%;
+}
+
+#find {
+  right: 10px;
+}
+
+#discardBtn {
+  right: 15px;
+}
