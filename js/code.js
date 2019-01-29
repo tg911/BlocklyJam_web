@@ -31,16 +31,31 @@ Blockly.IchigoJamBASIC['待つ'] = function(block) {
 };
 
 Blockly.IchigoJamBASIC['左センサ'] = function(block) {
-  var code = 'IN(1) > 0'
+  var code = 'IN(4) = 0'
   return [code, Blockly.IchigoJamBASIC.ORDER_NONE];
 };
 
 Blockly.IchigoJamBASIC['中センサ'] = function(block) {
-  var code = 'IN(2) > 0'
+  var code = 'IN(2) = 0'
   return [code, Blockly.IchigoJamBASIC.ORDER_NONE];
 };
 
 Blockly.IchigoJamBASIC['右センサ'] = function(block) {
-  var code = 'IN(4) > 0'
+  var code = 'IN(1) = 0'
+  return [code, Blockly.IchigoJamBASIC.ORDER_NONE];
+};
+
+Blockly.IchigoJamBASIC['LEDを光らせる'] = function(block) {
+  var code = 'LED 1' + '\n'
+  return code;
+};
+
+Blockly.IchigoJamBASIC['LEDをけす'] = function(block) {
+  var code = 'LED 0' + '\n'
+  return code;
+};
+
+Blockly.IchigoJamBASIC['ボタン'] = function(block) {
+  var code = 'BTN()'
   return [code, Blockly.IchigoJamBASIC.ORDER_NONE];
 };

@@ -992,7 +992,8 @@ function sendKonashi(k, text) {
   var closeButton = document.getElementById("closeProgressBar");
 
   // console.log(text);
-  var sliceText = text.split(/(\n)/);
+  // var sliceText = text.split(/(\n)/);
+  var sliceText = text.split('');
   var sliceTextLength = sliceText.length;
   var progressBar = document.getElementById("progressBar");
   var progressValue = 0;
@@ -1008,7 +1009,8 @@ function sendKonashi(k, text) {
       // console.log('uart write', sliceText.length);
       progressBar.style.width = progressValue + "%";
       // progressValue = (1 / sliceText.length) * 100;
-      console.log(progressBar.style.width);
+      // console.log(progressBar.style.width);
+      console.log(sliceText[0]);
 
     });
 
@@ -1039,7 +1041,7 @@ function sendKonashi(k, text) {
       //   });
       // });
     }
-  }, 150);
+  }, 50);
 };
 
 document.getElementById("find").addEventListener('click', () => {
